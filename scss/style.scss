@@ -918,12 +918,24 @@ nav {
 }
 
 
+.db-menu{
+  background: none;
+  border: none;
+  
+}
+.db-menu a{
+  color: white;
+  font-size: 14px;
+  &:hover{
+    color: var(--navtext-hoover);
+  }
+}
 
 @keyframes animateY50 {
   25% {
     transform: translateY(50px);
   }
-
+  
   50% {
     transform: translateY(0);
   }

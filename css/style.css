@@ -872,6 +872,19 @@ nav {
   color: var(--button-bg);
 }
 
+.db-menu {
+  background: none;
+  border: none;
+}
+
+.db-menu a {
+  color: white;
+  font-size: 14px;
+}
+.db-menu a:hover {
+  color: var(--navtext-hoover);
+}
+
 @keyframes animateY50 {
   25% {
     transform: translateY(50px);
