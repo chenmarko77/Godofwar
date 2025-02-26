@@ -871,7 +871,13 @@ nav {
 .accordion {
   width: 903px;
   margin: 0 auto;
-
+  &-header{
+    display: flex;
+    justify-content: space-between;
+    &-icon{
+      transition: all .5s;
+    }
+  }
   &-item {
     border-bottom: 2px solid var(--navtext-hoover);
     background-color: #1c2023;
@@ -885,19 +891,19 @@ nav {
     font-size: 17px;
     position: relative;
 
-    &::after {
-      content: '';
-      display: inline-block;
-      width: 30px;
-      height: 30px;
-      background-image: var(--icon-image);
-      background-size: contain;
-      background-repeat: no-repeat;
-      position: absolute;
-      right: 10px;
-      top: 50%;
-      transform: translateY(-50%);
-    }
+    // &::after {
+    //   content: '';
+    //   display: inline-block;
+    //   width: 30px;
+    //   height: 30px;
+    //   background-image: var(--icon-image);
+    //   background-size: contain;
+    //   background-repeat: no-repeat;
+    //   position: absolute;
+    //   right: 10px;
+    //   top: 50%;
+    //   transform: translateY(-50%);
+    // }
 
     &:focus,
     :active,
@@ -918,24 +924,12 @@ nav {
 }
 
 
-.db-menu{
-  background: none;
-  border: none;
-  
-}
-.db-menu a{
-  color: white;
-  font-size: 14px;
-  &:hover{
-    color: var(--navtext-hoover);
-  }
-}
 
 @keyframes animateY50 {
   25% {
     transform: translateY(50px);
   }
-  
+
   50% {
     transform: translateY(0);
   }
