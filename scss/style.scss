@@ -21,6 +21,7 @@ body {
   font-family: var(--font-family);
   font-size: 14px;
   font-weight: 400;
+  margin: 0 auto;
 }
 a {
   text-decoration: none;
@@ -923,6 +924,71 @@ nav {
   }
 }
 
+.db-menu{
+  background: none;
+  border: none;
+  
+}
+.db-menu a{
+  color: white;
+  font-size: 14px;
+  &:hover{
+    color: var(--navtext-hoover);
+  }
+}
+
+
+.footer{
+  margin-top: 154px;
+  display: flex;
+  flex-direction: column;
+  color: var(--item-text-color);
+  &__list{
+    margin: 0 auto;
+    display: flex;
+    width: 964px;
+    position: relative;
+    &__item{
+      margin-right: 22px;
+      text-transform: uppercase;
+      font-size: 16px;
+      line-height: 169%;
+    }
+    &__lang{
+      position: absolute;
+      right: 0;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 193%;
+      &__text{
+        color: var(--white-color);
+      }
+    }
+  }
+  &__text{
+    margin: 50px auto 38px;
+    text-align: center;
+  }
+  &__img{
+    width: 46px;
+    height: 35px;
+    margin: 0 auto;
+  }
+  &__year{
+    font-size: 16px;
+    margin: 20px auto 13px;
+  }
+
+  &__developed{
+    font-size: 16px;
+    margin: 0 auto 13px;
+
+    &__author{
+     color: var(--navtext-hoover);
+    }
+  }
+  
+}
 
 
 @keyframes animateY50 {
