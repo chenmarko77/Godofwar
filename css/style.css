@@ -885,6 +885,13 @@ nav {
   display: flex;
   flex-direction: column;
   color: var(--item-text-color);
+  position: relative;
+}
+.footer-bg {
+  position: absolute;
+  right: 20%;
+  top: -50%;
+  z-index: -1;
 }
 .footer__list {
   margin: 0 auto;
