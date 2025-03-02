@@ -1016,14 +1016,10 @@ nav {
   }
 
   .img-burger {
-    margin-left: 290px;
-    margin-top: 10px;
+    margin-left: 0;
   }
 
   .nav-button {
-    color: var(--navtext-color);
-    line-height: 193%;
-
     &:hover {
       color: var(--navtext-hoover);
     }
@@ -1031,15 +1027,11 @@ nav {
   .navbar {
     &-button {
       position: relative; // Change to relative
-      border: none;
-      background: transparent; // Ensure background is transparent
-      z-index: 2;
     }
     &-nav {
       display: flex;
-      width: 640px;
-      justify-content: space-between;
-      margin-left: 370px;
+      width: 430px;
+      margin-left: 0;
     }
 
     .active {
@@ -1058,6 +1050,7 @@ nav {
 
   .header {
     display: flex;
+    width: 430px;
     flex-direction: column;
     background: url("/img/bg.png") no-repeat right top;
     margin: 0 auto;
@@ -1081,20 +1074,29 @@ nav {
   }
 
   .main {
+    width: 430px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
     &-text {
-      width: 420px;
+      width: 95%;
       height: 180px;
-      font-size: 80px;
-      margin-top: 30px;
+      font-size: 68px;
+      margin-left: 0;
+      margin-top: 5%;
       text-align: center;
     }
     &-subtext {
       width: 60%;
       text-align: center;
+
+      margin: -7% auto;
     }
     &-button {
-align-self: center;
-
+      align-self: center;
+      margin-left: 0;
+      margin-top: 40%;
+      margin-bottom: 5%;
       width: 250px;
       height: 50px;
       font-size: 24px;
@@ -1102,32 +1104,37 @@ align-self: center;
   }
 
   .editions {
+    width: 430px;
+    margin-left: 0;
+    margin: 0 auto;
+    align-items: center;
+  
     &__header {
-      margin: 54px auto 32px;
-      text-align: center;
-      color: var(--white-color);
-      font-family: var(--font-family);
-      font-weight: 600;
       font-size: 40px;
     }
     &__list {
-      width: 1132px;
-      height: 458px;
+      width: 430px;
+      height: auto;
       display: flex;
-      justify-content: space-between;
-      margin: 0 auto;
+      flex-direction: column;
+
+      align-items: center;
+      margin-left: 0;
+      padding: 0;
       &__item {
         border-radius: 6px;
-        width: 350px;
-        height: 458px;
+        width: 430px;
+        height: auto;
         background: linear-gradient(180deg, #141615 0%, #1c2023 100%);
         display: flex;
         flex-direction: column;
         justify-content: center;
+        margin-left: 0;
         &__btn1 {
           font-family: var(--font-family);
           font-weight: 500;
           font-size: 13px;
+          margin-bottom: 5%;
           &:hover {
             color: var(--navtext-hoover);
             background-color: var(--playbtn-bg);
@@ -1137,6 +1144,7 @@ align-self: center;
           font-family: var(--font-family);
           font-weight: 500;
           font-size: 13px;
+          margin-bottom: 5%;
           &:hover {
             color: var(--navtext-hoover);
             background-color: var(--playbtn-bg);
@@ -1146,6 +1154,7 @@ align-self: center;
           font-family: var(--font-family);
           font-weight: 500;
           font-size: 13px;
+          margin-bottom: 5%;
           &:hover {
             color: var(--navtext-hoover);
             background-color: var(--playbtn-bg);
@@ -1172,8 +1181,8 @@ align-self: center;
           font-family: var(--font-family);
           color: var(--item-text-color);
           row-gap: 12px;
-          align-items: start;
-          margin-left: 17px;
+          align-items: center;
+          text-align: center;
         }
         &__price1,
         &__price2,
