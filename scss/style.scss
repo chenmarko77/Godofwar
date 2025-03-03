@@ -22,6 +22,9 @@ body {
   font-size: 14px;
   font-weight: 400;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 a {
   text-decoration: none;
@@ -878,6 +881,9 @@ nav {
     &-icon {
       transition: all 0.5s;
     }
+
+
+
   }
   &-item {
     border-bottom: 2px solid var(--navtext-hoover);
@@ -1230,7 +1236,7 @@ nav {
 
   .modal {
     &-content {
-      width: 470px;
+      width: 415px;
       height: 565px;
       background: url("/img/worriors_axe_bowel.png") no-repeat center/cover;
     }
@@ -1691,6 +1697,10 @@ nav {
   }
   
   .news {
+    width: 430px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     &__title {
       font-weight: 700;
       font-size: 40px;
@@ -1698,16 +1708,18 @@ nav {
       text-align: center;
       margin-top: 54px;
       margin-bottom: 20px;
+      
     }
   }
 
   .swiper {
-    width: 1830px;
+    width: 430px;
     margin: 0 auto;
+    margin-left: 20px;
     &-slide {
       color: white;
-      width: 615px;
-      height: 346px;
+      width: 90%;
+      height: auto;
       border-radius: 6px;
       flex-shrink: 0;
       background: linear-gradient(180deg, #30373f 22.4%, #141615 100%);
@@ -1733,8 +1745,9 @@ nav {
         margin-top: 15px;
       }
       &__title {
-        width: 523px;
-        height: 22px;
+        width: 90%;
+        text-align: center;
+        height: auto;
         font-weight: 600;
         font-size: 19px;
         text-transform: uppercase;
@@ -1743,33 +1756,49 @@ nav {
         margin-bottom: 14px;
       }
       &__bottom {
-        margin-left: 20px;
+        margin-left: 0px;
         display: flex;
+        flex-direction: column;
+        align-items: center;
+justify-content: center;
+
         &__text {
-          width: 256px;
-          height: 209px;
+          width: 90%;
+          height: auto;
           font-family: var(--font-family);
           font-weight: 400;
-          font-size: 12px;
+          font-size: 15px;
           line-height: 142%;
           color: white;
-          margin-left: 24px;
+          margin-left: 0px;
+          text-align: center;
         }
+
+        &__img{
+          width: 90%;
+          height: auto;
+          margin-bottom: 5%;
+
+        }
+
         &__btn {
-          position: absolute;
-          bottom: 20px;
-          right: 20px;
+          position: static;
+          bottom: 0px;
+          right: 0px;
           padding: 8px 30px;
-          // width: 35px;
-          // height: 15px;
+          width: 60%;
+          height: 25%;
           font-family: var(--font-family);
           font-weight: 500;
-          font-size: 13px;
+          font-size: 16px;
           text-transform: uppercase;
           border-radius: 6px;
           background: var(--item-text-color);
           color: var(--white-color);
           border: none;
+          margin-left: 0;
+          margin-bottom: 5%;
+          align-self: center;
         }
       }
     }
@@ -1823,13 +1852,12 @@ nav {
       font-size: 40px;
       color: var(--white-color);
       text-align: center;
-      margin-top: 107px;
-      margin-bottom: 32px;
+      margin: 50px auto 32px;
     }
   }
 
   .accordion {
-    width: 903px;
+    width: 90%;
     margin: 0 auto;
     &-header {
       display: flex;
@@ -1880,6 +1908,7 @@ nav {
 
     &-body-date {
       color: var(--button-bg);
+      width: 430px;
     }
   }
 
@@ -1903,17 +1932,19 @@ nav {
     position: relative;
     &-bg {
       position: absolute;
-      right: 20%;
-      top: -50%;
+      right: 10%;
+      top: -40%;
       z-index: -1;
     }
     &__list {
       margin: 0 auto;
       display: flex;
-      width: 964px;
+      width: 80%;
       position: relative;
+      display: flex;
+      flex-direction: column;
       &__item {
-        margin-right: 22px;
+        margin-right: 0;
         text-transform: uppercase;
         font-size: 16px;
         line-height: 169%;
@@ -1930,6 +1961,7 @@ nav {
       }
     }
     &__text {
+      width: 80%;
       margin: 50px auto 38px;
       text-align: center;
     }
