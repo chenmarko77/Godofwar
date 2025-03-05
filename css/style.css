@@ -54,6 +54,19 @@ nav {
   background: transparent;
   z-index: 2;
 }
+.navbar-icon {
+  width: 35px;
+  height: 26px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.navbar-icon-line {
+  height: 3px;
+  width: 100%;
+  border-radius: 10%;
+  background: var(--white-color);
+}
 .navbar-nav {
   display: flex;
   width: 640px;
@@ -63,6 +76,9 @@ nav {
 .navbar .active {
   color: #8856d9;
 }
+.navbar .navbar-toggler-icon {
+  background-image: none !important;
+}
 .navbar-toggler:focus {
   outline: none;
   box-shadow: none;
@@ -70,6 +86,10 @@ nav {
 }
 .navbar-dropdown {
   background-color: transparent !important;
+}
+
+.line2 {
+  width: 50%;
 }
 
 .header {

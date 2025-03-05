@@ -54,6 +54,23 @@ nav {
     background: transparent; // Ensure background is transparent
     z-index: 2;
   }
+
+  &-icon{
+    width: 35px;
+    height: 26px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &-line{
+      height: 3px;
+      width: 100%;
+      border-radius: 10%;
+      background: var(--white-color);
+    }
+  }
+
+
   &-nav {
     display: flex;
     width: 640px;
@@ -65,6 +82,10 @@ nav {
     color: #8856d9;
   }
 
+  .navbar-toggler-icon {
+    background-image: none !important; 
+  }
+
   &-toggler:focus {
     outline: none;
     box-shadow: none;
@@ -73,6 +94,10 @@ nav {
   &-dropdown {
     background-color: transparent !important; // Ensures dropdown background is transparent
   }
+}
+
+.line2{
+  width: 50%;
 }
 
 .header {

@@ -44,18 +44,20 @@
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <img
-              class="navbar-toggler-icon img-burger"
-              src="/img/hamburger.svg"
-              alt="King Icon"
-              style="width: 30px; height: auto"
-            />
+            <div class="navbar-icon navbar-toggler-icon">
+              <div class="navbar-icon-line"></div>
+              <div class="navbar-icon-line line2"></div>
+              <div class="navbar-icon-line"></div>
+            </div>
             <!-- <span class="navbar-toggler-icon"></span> -->
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link nav-button" aria-current="page" href="#editions"
+                <a
+                  class="nav-link nav-button"
+                  aria-current="page"
+                  href="#editions"
                   >EDITIONS</a
                 >
               </li>
@@ -106,7 +108,9 @@
         Fimbulwinter, a great winter that spans three summers, is drawing to a
         close which will begin the prophesied Ragnarök.
       </p>
-      <a class="main-button-link" href="#editions"><button class="main-button">BUY NOW</button></a>
+      <a class="main-button-link" href="#editions"
+        ><button class="main-button">BUY NOW</button></a
+      >
     </header>
 
     <main>
@@ -357,7 +361,9 @@
               DEDICATED VIDEO RAM:
               <span class="explore__box__desc__vRAM">4 GB</span>
             </p>
-            <a href="#editions"><button class="explore__box__btn">buy NOW</button></a>
+            <a href="#editions"
+              ><button class="explore__box__btn">buy NOW</button></a
+            >
           </div>
         </div>
 
@@ -388,9 +394,11 @@
               Display languages:
               <span class="explore__box2__desc__lang">English</span>
             </p>
-            <a href="#editions"><button class="explore__box2__btn">buy NOW</button></a>
+            <a href="#editions"
+              ><button class="explore__box2__btn">buy NOW</button></a
+            >
           </div>
-          <img  class="explore__box2__img" src="/img/man_with_axe.png" alt="" />
+          <img class="explore__box2__img" src="/img/man_with_axe.png" alt="" />
         </div>
       </section>
 
@@ -639,15 +647,30 @@
       </section>
     </main>
     <footer class="footer">
-      
       <ul class="footer__list">
-        <li class="footer__list__item footer__list__editions"><a href="#editions">Editions</a></li>
-        <li class="footer__list__item footer__list__controller"><a href="#dualseans">Controller</a></li>
-        <li class="footer__list__item footer__list__aboutgames"><a href="#aboutgame">About Game</a></li>
-        <li class="footer__list__item footer__list__explore"><a href="#explore">Explore</a></li>
-        <li class="footer__list__item footer__list__news"><a href="#news">News</a></li>
-        <li class="footer__list__item footer__list__faq"><a href="#faq">FAQ</a></li>
-        <li class="footer__list__item footer__list__lang"><a href="#">Language: <span class="footer__list__lang__text">ENGLISH</span></a></li>
+        <li class="footer__list__item footer__list__editions">
+          <a href="#editions">Editions</a>
+        </li>
+        <li class="footer__list__item footer__list__controller">
+          <a href="#dualseans">Controller</a>
+        </li>
+        <li class="footer__list__item footer__list__aboutgames">
+          <a href="#aboutgame">About Game</a>
+        </li>
+        <li class="footer__list__item footer__list__explore">
+          <a href="#explore">Explore</a>
+        </li>
+        <li class="footer__list__item footer__list__news">
+          <a href="#news">News</a>
+        </li>
+        <li class="footer__list__item footer__list__faq">
+          <a href="#faq">FAQ</a>
+        </li>
+        <li class="footer__list__item footer__list__lang">
+          <a href="#"
+            >Language: <span class="footer__list__lang__text">ENGLISH</span></a
+          >
+        </li>
       </ul>
       <p class="footer__text">
         Download of this product is subject to the PlayStation Network Terms of
@@ -664,8 +687,11 @@
         alt="play station image"
       />
       <p class="footer__year">2025</p>
-      <p class="footer__developed">Developed by <span class="footer__developed__author">Marko Chen</span>. All rights reserved</p>
-      <img class="footer-bg" src="/img/img_footer.png" alt="">
+      <p class="footer__developed">
+        Developed by <span class="footer__developed__author">Marko Chen</span>.
+        All rights reserved
+      </p>
+      <img class="footer-bg" src="/img/img_footer.png" alt="" />
     </footer>
   </body>
 </html>
